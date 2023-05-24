@@ -48,25 +48,30 @@ fun AboutPage(
                 .fillMaxWidth()
                 .clip(RoundedCornerShape(24.dp))
         )
-        Text (
-            text = stringResource(R.string.name),
+        Column(
             modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 15.dp),
-            fontWeight = FontWeight.Bold,
-            fontSize = 24.sp,
-            textAlign = TextAlign.Center
-        )
+                .padding(8.dp)
+        ) {
+            Text (
+                text = stringResource(R.string.name),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(4.dp),
+                fontWeight = FontWeight.Bold,
+                fontSize = 24.sp,
+                textAlign = TextAlign.Center
+            )
 
-        Text (
-            text = stringResource(R.string.email),
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 15.dp),
-            fontWeight = FontWeight.Normal,
-            fontSize = 18.sp,
-            textAlign = TextAlign.Center
-        )
+            Text (
+                text = stringResource(R.string.email),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(),
+                fontWeight = FontWeight.Normal,
+                fontSize = 18.sp,
+                textAlign = TextAlign.Center
+            )
+        }
 
     }
 }
