@@ -50,6 +50,7 @@ fun DetailPage(
                 val data = uiState.data
                 DetailContent(
                     data.member.name,
+                    data.member.gen,
                     data.member.desc,
                     data.member.photoUrl,
                     data.member.price,
@@ -69,6 +70,7 @@ fun DetailPage(
 @Composable
 fun DetailContent(
     name: String,
+    gen: String,
     desc: String,
     photoUrl: String,
     basePoint: Int,
@@ -118,11 +120,15 @@ fun DetailContent(
                     ),
                 )
                 Text(
+                    text = gen,
+                    style = MaterialTheme.typography.body1,
+                    textAlign = TextAlign.Justify,
+                )
+                Text(
                     text = stringResource(com.example.hololiveapp.R.string.Rp, basePoint),
-                    style = MaterialTheme.typography.subtitle1.copy(
-                        fontWeight = FontWeight.ExtraBold
-                    ),
-                    color = MaterialTheme.colors.secondary
+                    color = Color.Black,
+                    style = MaterialTheme.typography.h6,
+                    textAlign = TextAlign.Center
                 )
                 Text(
                     text = desc,
@@ -165,9 +171,10 @@ fun DetailMerchPreview() {
     HololiveAppTheme() {
         DetailContent(
             "Shirakami Fubuki",
+            "Hololive Japan Generation 1",
             "adalah rubah yang suka mem-friend zone viewer nya",
             "",
-            50000,
+            10000,
             1,
             onBackClick = {},
             onAddToCart = {}
