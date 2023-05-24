@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HololiveApp</string>
+    <string name="cari">Cari member</string>
+    <string name="Rp">Rp. %d</string>
+    <string name="back">Back</string>
+    <string name="thanks">Your purchase will be processed immediately!</string>
+    <string name="Cart">My Cart</string>
+    <string name="Home">Home</string>
+    <string name="Profile">Profile</string>
+    <string name="name">Muhammad Devan Ryandra </string>
+    <string name="email">a151dkx4481@bangkit.academy</string>
+
+    <string name="money">Price</string>
+</resources>
