@@ -110,7 +110,11 @@ fun DetailContent(
             }
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier.padding(16.dp)
+                modifier = Modifier
+                    .padding(16.dp)
+                    .fillMaxWidth(
+
+                    )
             ) {
                 Text(
                     text = name,
@@ -165,7 +169,7 @@ fun DetailContent(
     }
 }
 
-@Preview(showBackground = true, device = Devices.PIXEL_4)
+@Preview(showBackground = true, device = Devices.PIXEL_4_XL)
 @Composable
 fun DetailMerchPreview() {
     HololiveAppTheme() {
